@@ -17,6 +17,9 @@ function RenderList() {
                 }
             </ul>
             <div>
+                <p class="text-4xl font-bold underline">
+                    Hello world!
+                </p>
                 {
                     rollno.map((val, ind) => {
                         return (
@@ -25,7 +28,6 @@ function RenderList() {
                     })
                 }
             </div>
-
         </div>
 
     )
