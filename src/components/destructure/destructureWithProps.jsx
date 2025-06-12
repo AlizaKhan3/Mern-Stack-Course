@@ -35,19 +35,19 @@ const RenderIndCardsPropsWithDest = () => {
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-200 p-6">
-            {/* {
+            {
                 //  With Destructure directly in MAP()
                 CardsArray.map(({ title, description, price, category, image}, index) => {
                     return <AppCard key={index} title={title} description={description} price={price} category={category} image={image} />
                 })
-            } */}
+            }
             {
                 CardsArray.map((object, index) => {
                     const { title, description, price, category, image } = object
                     return (
                         <>
                             {/* With Destructure  */}
-                            <AppCard title={title} description={description} price={price} category={category} image={image} key={index} />
+                            {/* <AppCard title={title} description={description} price={price} category={category} image={image} key={index} /> */}
 
                             {/* Without Destructure using direct Object */}
                             {/* < AppCard key={index} title={object.title} description={object.description} image={object.image} category={object.category} price={object.price} /> */}
