@@ -7,6 +7,7 @@ import RenderIndCardsPropsWithDest from './components/destructure/destructureWit
 import RenderAllCardProps from './components/props/RenderAllCardProps';
 import RecapProps from './components/props/recapProps';
 import StateHook from './components/Hooks/StateHook';
+import RenderData from './components/render-API-Data/renderData';
 
 function App() {
    const namesArr = ['Aliza', 'Adil', 'Abdullah', 'hira', 'bilal'];
@@ -39,7 +40,9 @@ function App() {
 
          {/* <RecapProps/> */}
 
-         <StateHook />
+         {/* <StateHook /> */}
+
+         <RenderData/>
       </>
    )
 }

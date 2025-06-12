@@ -1,4 +1,4 @@
-import AppCard from "../cardComponent";
+import AppCard from "../AppCard";
 
 const RenderIndCardsPropsWithDest = () => {
 
