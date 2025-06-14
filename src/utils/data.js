@@ -836,3 +836,63 @@ export const cardDataArray = [
         "updatedAt": "2025-06-12T19:58:50.000Z"
     }
 ]
+
+
+export const categoryArray = [
+  {
+    "id": 1,
+    "name": "Clothes",
+    "slug": "clothes",
+    "image": "https://i.imgur.com/QkIa5tT.jpeg",
+    "creationAt": "2025-06-13T02:51:40.000Z",
+    "updatedAt": "2025-06-13T02:51:40.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Electronics",
+    "slug": "electronics",
+    "image": "https://i.imgur.com/ZANVnHE.jpeg",
+    "creationAt": "2025-06-13T02:51:40.000Z",
+    "updatedAt": "2025-06-13T02:51:40.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Furniture",
+    "slug": "furniture",
+    "image": "https://i.imgur.com/Qphac99.jpeg",
+    "creationAt": "2025-06-13T02:51:40.000Z",
+    "updatedAt": "2025-06-13T02:51:40.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Shoes",
+    "slug": "shoes",
+    "image": "https://i.imgur.com/qNOjJje.jpeg",
+    "creationAt": "2025-06-13T02:51:40.000Z",
+    "updatedAt": "2025-06-13T02:51:40.000Z"
+  },
+  {
+    "id": 5,
+    "name": "Miscellaneous",
+    "slug": "miscellaneous",
+    "image": "https://i.imgur.com/BG8J0Fj.jpg",
+    "creationAt": "2025-06-13T02:51:40.000Z",
+    "updatedAt": "2025-06-13T02:51:40.000Z"
+  },
+  {
+    "id": 9,
+    "name": "Grosery",
+    "slug": "grosery",
+    "image": "https://placeimg.com/640/480/any",
+    "creationAt": "2025-06-13T11:00:39.000Z",
+    "updatedAt": "2025-06-13T11:00:39.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Computer Category",
+    "slug": "computer-category",
+    "image": "https://placeimg.com/640/480/any",
+    "creationAt": "2025-06-13T11:00:40.000Z",
+    "updatedAt": "2025-06-13T11:00:40.000Z"
+  }
+]
