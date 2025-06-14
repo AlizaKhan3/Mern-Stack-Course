@@ -5,6 +5,9 @@ import RenderUsers from './components/props/renderUsers';
 // import RenderIndCardsProps from './components/props/renderIndCardsProps';
 import RenderIndCardsPropsWithDest from './components/destructure/destructureWithProps';
 import RenderAllCardProps from './components/props/RenderAllCardProps';
+import RecapProps from './components/props/recapProps';
+import StateHook from './components/Hooks/StateHook';
+import RenderData from './components/render-API-Data/renderData';
 
 function App() {
    const namesArr = ['Aliza', 'Adil', 'Abdullah', 'hira', 'bilal'];
@@ -33,8 +36,13 @@ function App() {
          {/* <RenderIndCardsPropsWithDest /> */}
          {/* <RenderIndCardsProps /> */}
 
-         <RenderAllCardProps/>
+         {/* <RenderAllCardProps/> */}
 
+         {/* <RecapProps/> */}
+
+         {/* <StateHook /> */}
+
+         <RenderData/>
       </>
    )
 }
