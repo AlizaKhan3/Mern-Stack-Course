@@ -3,6 +3,7 @@ import { productDataArray } from "../../utils/data";
 import DataCategory from "./Category";
 import { useState } from "react";
 import TitleFilter from "./titleFilter";
+import PriceSort from "./priceSort";
 
 const RenderData = () => {
     const [productList, setProductList] = useState(productDataArray)
@@ -42,24 +43,46 @@ const RenderData = () => {
         // console.log(searchedItemValue);
     }
 
-return (
-    <div>
-        <div className="container flex m-4 gap-6">
-            <DataCategory handleCategory={updateProductList} />
-            <TitleFilter handleSearchedItem={handleItem} />
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-200 p-6">
-            {
-                productList.map((object, index) => {
-                    return (
-                        <ProductCard key={index} ObjectData={object} />
-                    )
-                })
-            }
-        </div>
-    </div>
+    const sortProductList = (e) => {
+        const selectedOption = e.target.value;
+        console.log(selectedOption)
+        const productPriceArray = productDataArray.map((product, index) => product.price);
+        console.log(productPriceArray)
+        // if(selectedOption === ""){
+        //     setProductList(productDataArray);
+        // }
 
-)
+
+        //Sort takes 2 objects
+        if (selectedOption === "Low to High") {
+            productDataArray.sort((a, b) => {
+
+                // product.price.min()
+
+
+            })
+        }
+    }
+
+    return (
+        <div>
+            <div className="container flex m-4 gap-6">
+                <DataCategory handleCategory={updateProductList} />
+                <TitleFilter handleSearchedItem={handleItem} />
+                <PriceSort sortProducts={sortProductList} />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-200 p-6">
+                {
+                    productList.map((object, index) => {
+                        return (
+                            <ProductCard key={index} ObjectData={object} />
+                        )
+                    })
+                }
+            </div>
+        </div>
+
+    )
 }
 
 export default RenderData;
