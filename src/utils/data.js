@@ -1,4 +1,4 @@
-export const cardDataArray = [
+export const productDataArray = [
     {
         "id": 383,
         "title": "Classic Black T-Shirt",
@@ -7,7 +7,7 @@ export const cardDataArray = [
         "description": "Elevate your everyday style with our Classic Black T-Shirt. This staple piece is crafted from soft, breathable cotton for all-day comfort. Its versatile design features a classic crew neck and short sleeves, making it perfect for layering or wearing on its own. Durable and easy to care for, it's sure to become a favorite in your wardrobe.",
         "category": {
             "id": 1,
-            "name": "Sebastian",
+            "name": "Clothes",
             "slug": "sebastian",
             "image": "https://i.imgur.com/QkIa5tT.jpeg",
             "creationAt": "2025-06-12T02:20:22.000Z",
