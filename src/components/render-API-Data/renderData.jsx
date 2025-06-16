@@ -21,9 +21,6 @@ const RenderData = () => {
         }
     }
 
-    // const [titleList, setTitleList] = useState(productDataArray);
-    // const productTitles = productDataArray.filter((product) => product.title);
-    // console.log(productTitles)
     const handleItem = (event) => {
         const searchedItemValue = event.target.value;
         console.log(searchedItemValue)
@@ -43,25 +40,23 @@ const RenderData = () => {
         // console.log(searchedItemValue);
     }
 
-    const sortProductList = (e) => {
+    const sortPrice = (e) => {
         const selectedOption = e.target.value;
         console.log(selectedOption)
-        const productPriceArray = productDataArray.map((product, index) => product.price);
-        console.log(productPriceArray)
-        // if(selectedOption === ""){
-        //     setProductList(productDataArray);
-        // }
-
+        const sortedProdList = [...productDataArray]
 
         //Sort takes 2 objects
         if (selectedOption === "Low to High") {
-            productDataArray.sort((a, b) => {
-
-                // product.price.min()
-
-
-            })
+            sortedProdList.sort((a, b) => a.price - b.price);
+            // setProductList(sortedProdList)
         }
+        else if (selectedOption === "High to Low") {
+            sortedProdList.sort((a, b) => b.price - a.price);
+            // setProductList(sortedProdList)
+        }
+        // else {
+            setProductList(sortedProdList)
+        // }
     }
 
     return (
@@ -69,7 +64,7 @@ const RenderData = () => {
             <div className="container flex m-4 gap-6">
                 <DataCategory handleCategory={updateProductList} />
                 <TitleFilter handleSearchedItem={handleItem} />
-                <PriceSort sortProducts={sortProductList} />
+                <PriceSort sortProducts={sortPrice} />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-blue-200 p-6">
                 {
@@ -81,7 +76,6 @@ const RenderData = () => {
                 }
             </div>
         </div>
-
     )
 }
 
