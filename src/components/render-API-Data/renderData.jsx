@@ -61,7 +61,7 @@ const RenderData = () => {
 
     return (
         <div>
-            <div className="container flex m-4 gap-6">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 bg-orange-500">
                 <DataCategory handleCategory={updateProductList} />
                 <TitleFilter handleSearchedItem={handleItem} />
                 <PriceSort sortProducts={sortPrice} />
