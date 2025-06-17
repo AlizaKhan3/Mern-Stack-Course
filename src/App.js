@@ -8,6 +8,7 @@ import RenderAllCardProps from './components/props/RenderAllCardProps';
 import RecapProps from './components/props/recapProps';
 import StateHook from './components/Hooks/StateHook';
 import RenderData from './components/render-API-Data/renderData';
+import UseMemoHook from './components/Hooks/UseMemo';
 
 function App() {
    const namesArr = ['Aliza', 'Adil', 'Abdullah', 'hira', 'bilal'];
@@ -42,7 +43,8 @@ function App() {
 
          {/* <StateHook /> */}
 
-         <RenderData/>
+         {/* <RenderData/> */}
+         <UseMemoHook/>
       </>
    )
 }
